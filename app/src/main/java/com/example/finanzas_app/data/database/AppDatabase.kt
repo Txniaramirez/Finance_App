@@ -8,6 +8,7 @@ import androidx.room.TypeConverters
 import com.example.finanzas_app.data.dao.BudgetDao
 import com.example.finanzas_app.data.dao.ExpenseDao
 import com.example.finanzas_app.data.dao.UserDao
+import com.example.finanzas_app.data.dao.SharedExpenseDao
 import com.example.finanzas_app.data.model.Budget
 import com.example.finanzas_app.data.model.Expense
 import com.example.finanzas_app.data.model.SharedExpense
@@ -25,7 +26,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun userDao(): UserDao
     abstract fun expenseDao(): ExpenseDao
     abstract fun budgetDao(): BudgetDao
-    abstract fun sharedExpenseDao(): SharedExpense
+    abstract fun sharedExpenseDao(): SharedExpenseDao
 
     companion object{
         @Volatile
